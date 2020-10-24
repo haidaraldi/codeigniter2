@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Tampil Data Barang</title>
+    <title>Tampil Data Pengguna/title>
 </head>
 
 <body>
@@ -11,21 +11,19 @@
     <table style="margin:20px auto; border: 1">
         <tr>
             <th>No</th>
+            <th>ID Departemen</th>
             <th>ID Barang</th>
-            <th>Nama Barang</th>
-            <th>Jumlah</th>
-            <th>Merk</th>
+            <th>Pengguna</th>
         </tr>
         <?php
         $no = 1;
-        foreach ($tbl_barang as $u) {
+        foreach ($tbl_pengguna as $u) {
         ?>
             <tr>
                 <td><?php echo $no++ ?></td>
-                <td><?php echo $u->Id ?></td>
-                <td><?php echo $u->nm_brg ?></td>
-                <td><?php echo $u->jml ?></td>
-                <td><?php echo $u->merk ?></td>
+                <td><?php echo $u->Id_dep ?></td>
+                <td><?php echo $u->Id_brg ?></td>
+                <td><?php echo $u->pengguna ?></td>
             </tr>
         <?php } ?>
     </table>
